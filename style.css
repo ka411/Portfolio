@@ -42,7 +42,7 @@ header {
   font-size: 3.6rem;
   color: var(--main-color);
   cursor: pointer;
-  display: none; /* Display it only on smaller screens */
+  display: none; 
 }
 
 .logo {
@@ -79,7 +79,7 @@ span {
   color: var(--main-color);
 }
 
-/* Media query for mobile view */
+
 @media (max-width: 768px) {
   #menu-icon {
       display: block;
@@ -145,15 +145,15 @@ section{
 
 .home-img img {
   margin-top: 7rem;
-  width: 25vw; /* Sets the width */
-  height: 25vw; /* Ensures the height is equal to the width */
-  border-radius: 50%; /* Makes the image circular */
+  width: 25vw; 
+  height: 25vw; 
+  border-radius: 50%; 
   box-shadow: 0 0 25px var(--main-color);
-  transition: 0.4s ease-in-out; /* Added 's' for seconds */
+  transition: 0.4s ease-in-out;
 }
 
 .home-img img:hover {
-  box-shadow: 0 0 25px var(--main-color), /* Combined multiple shadows */
+  box-shadow: 0 0 25px var(--main-color),
               0 0 50px var(--main-color),
               0 0 100px var(--main-color);
 }
@@ -248,7 +248,7 @@ section{
   font-size: 1.8rem;
 }
 
-.about-content .btn { /* Updated selector */
+.about-content .btn { 
   margin: 3rem 0;
 }
 
@@ -272,7 +272,7 @@ section{
 
 .services {
   background-color: var(--bg-color);
-  color: var(--text-color); /* Corrected the 'columns' property */
+  color: var(--text-color); 
 }
 
 .services-container {
@@ -281,7 +281,7 @@ section{
   gap: 2.5rem;
 }
 
-.service-box { /* Corrected from 'services-box' */
+.service-box { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,12 +290,12 @@ section{
   border-radius: 3rem;
   cursor: pointer;
   border: 5px solid transparent;
-  transition: 0.4s ease-in-out; /* Added 's' for seconds */
+  transition: 0.4s ease-in-out; 
 }
 
-.service-box:hover { /* Corrected from 'services-box' */
+.service-box:hover { 
   background-color: var(--second-bg-color);
-  color: var(--main-color); /* Corrected from 'columns' */
+  color: var(--main-color);
   border: 5px solid var(--main-color);
   transform: scale(1.03);
 }
@@ -340,7 +340,7 @@ section{
 .contact form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start; 
   gap: 3rem;
   margin: 5rem 0;
 }
@@ -360,8 +360,8 @@ section{
 
 .contact form .input-box input {
   width: 100%;
-  padding: 1.5rem; /* Reduced padding for better alignment */
-  font-size: 1.6rem; /* Slightly smaller font-size */
+  padding: 1.5rem; 
+  font-size: 1.6rem; 
   color: var(--text-color);
   background-color: var(--bg-color);
   border-radius: 2rem;
@@ -441,21 +441,21 @@ section{
 
 @media(max-width: 1024px) {
   #menu-icon {
-    display: block; /* Show the menu icon */
+    display: block; 
   }
 
   .navbar {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%; /* Adjust width as needed */
+    width: 50%;
     padding: 1rem 3rem;
-    background-color: rgba(0, 0, 0, 0.38); /* Fixed syntax error: missing closing parenthesis */
+    background-color: rgba(0, 0, 0, 0.38);
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     border-bottom-left-radius: 2rem;
-    display: none; /* Hide the navbar by default */
-    z-index: 200; /* Ensure the navbar is above other content */
+    display: none; 
+    z-index: 200; 
   }
 
   .navbar a {
@@ -466,45 +466,46 @@ section{
   }
 
   .navbar.active {
-    display: block; /* Show the navbar when active */
+    display: block; 
   }
 
   .home {
-    flex-direction: column-reverse; /* Stack items vertically */
+    flex-direction: column-reverse;
     margin: 5rem 0;
     gap: 5rem;
   }
 
   .home-content {
-    align-items: center; /* Center align content */
-    text-align: center; /* Center text alignment */
+    align-items: center; 
+    text-align: center;
   }
 
   .home-img img {
-    width: 52vw; /* Adjust image width for smaller screens */
+    width: 52vw; 
   }
 
   .about {
-    flex-direction: column-reverse; /* Stack items vertically */
-    text-align: center; /* Center align text */
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
   .about h2 {
-    margin: 2rem 0; /* Adjust margin */
+    margin: 2rem 0;
   }
 
   .about-img img {
-    width: 52vw; /* Adjust image width for smaller screens */
+    width: 52vw; 
   }
 
   .contact form {
-    flex-direction: column; /* Stack form elements vertically */
-    align-items: center; /* Center align form items */
-    gap: 2rem; /* Adjust gap between form elements */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 2rem; 
   }
 
-  .contact .input-box input, /* Ensure proper spacing */
+  .contact .input-box input,
   .contact textarea {
-    width: 100%; /* Make input fields and textarea full width */
+    width: 100%; 
   }
 }
+
